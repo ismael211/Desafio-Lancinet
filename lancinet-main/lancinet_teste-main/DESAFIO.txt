@@ -1,0 +1,68 @@
+Backend:
+
+Criar uma api para realizar o gerenciamento de um produto.
+
+Campos:
+Cod Produto - integer
+Nome produto - string
+Valor Produto - float
+Marca Produto - (chave estrangeira) - int
+Estoque - float
+Cidade (Chave estrangeira) - int
+
+Cidade
+cod Cidade - integer pk
+nome Cidade - string
+
+Marca
+cod Marca - integer pk
+nome Marca - string
+Fabricante - string
+
+A partir desse cadastro um recurso REST para gerenciamento desse modelo com os seguintes métodos devem estar disponíveis:
+
+GET  - Lista todos os produtos ---- OK
+GET  - Busca um produto por id ---- OK
+POST  - Cria um novo produto ------ OK
+PUT  - Edita um produto ----------- OK
+DELETE  - Deleta um produto ------- OK
+GET - Listar todas as cidades ----- OK
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-=-=-=-=-=-=-=-=-
+
+
+
+Front-end:
+
+Agora que nossa api já está feita, precisamos fazer um front-end para conversar com essa api.
+O projeto do frontend, deverá ser feito com o framework que você está mais familiarizado. Caso utilize html, utilizar Jquery para as requisições
+
+=-=-=-=-=-=-=-==-=-=-=-=-=-=-= Implementar no front um filtro dinâmico para esses produtos =-=-=-=-=-=-=-==-=-=-=-=-=-=-=
+
+Como por exemplo: média dos valores dos produtos, soma de todos os produtos, filtrar do valor de x até y, produtos por cidade.
+
+
+
+
+"Implementar no front um filtro dinâmico para os produtos
+Como por exemplo: média dos valores dos produtos e soma de todos os produtos"
+
+
+
+
+ATENÇÃO: Não permitir excluir produto que tenha estoque.
+
+Validações de campos obrigatórios no cadastro do produto: Nome, Valor, Cidade, e restrição de unicidade também, para permitir apenas um produto com o mesmo.
+
+
+O projeto Backend devera ser feito em symfony, laravel ou slim com o banco de dados mysql.
+
+ ######################### ATENÇÃO = Implementar teste unitário.  ######################### 
+
+Utilizar as técnicas de clean code e orientação a objetos S.O.L.I.D
+
+Após o fim do projeto disponibilizar no github.
+
+A data limite de entrega do projeto será de 7 dias a partir do recebimento do teste.
